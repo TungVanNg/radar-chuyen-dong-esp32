@@ -1,3 +1,10 @@
+✍️ Tác giả
+Tên: NGUYỄN VĂN TÙNG
+
+Trường: Học viện Công nghệ Bưu chính Viễn thông (PTIT)
+
+Năm học: Năm nhất – Ngành Kỹ thuật điện tử viễn thông
+
 # 🚨 Dự án IoT: Radar phát hiện chuyển động bằng ESP32 + HC-SR04
 
 ## 📝 Mô tả dự án
@@ -53,7 +60,18 @@ Dự án này sử dụng **ESP32** kết hợp với cảm biến siêu âm **H
 
 ### Bước 2: Cài đặt WiFi
 Trong code, sửa phần này thành WiFi nhà bạn:
-
 ```cpp
 const char* ssid = "Ten_WiFi";
 const char* password = "MatKhauWiFi";
+```
+Bước 3: Nạp code
+Mở file code/radar_esp32.ino
+
+Cắm ESP32, chọn cổng COM phù hợp, chọn board “ESP32 Dev Module”
+
+Nhấn Upload
+
+Bước 4: Mở Serial Monitor
+Sau khi nạp xong, mở Serial Monitor sẽ thấy địa chỉ IP ví dụ: 192.168.1.69
+
+Dán IP vào trình duyệt → sẽ thấy radar hoạt động
