@@ -61,8 +61,8 @@ LED	(+) (qua trở 220Ω)	GPIO 26	Sáng khi phát hiện vật cản
 ---
 
 ## 📸 Hình ảnh minh họa
+![mach](https://github.com/user-attachments/assets/cc1beb67-11ff-4ae0-bba4-0391685bc183)
 
-![Sơ đồ nối dây](images/mach.jpg)
 
 ---
 
