@@ -17,18 +17,19 @@ Dự án này sử dụng **ESP32** kết hợp với cảm biến siêu âm **H
 ---
 
 ## 🔧 Phần cứng sử dụng
-Thiết bị	Số lượng	Ghi chú
-ESP32 DevKit V1	1	Bo mạch chính
-Servo 360 độ (SG90 hoặc tương đương)	1	Gắn cảm biến để quay
-Cảm biến siêu âm HC-SR04	1	Đo khoảng cách
-Breadboard	1	Kết nối không cần hàn
-Dây jumper đực-cái	~10	Đủ để nối các chân
-Buzzer 5V	1	Cảnh báo phát hiện vật thể gần
-LED đỏ	1	Hiển thị cảnh báo
-Điện trở 220Ω	1	Nối tiếp LED
-Cáp microUSB	1	Cấp nguồn và nạp code
-Laptop	1	Dùng Arduino IDE và mở trình duyệt
-(Tùy chọn) Nguồn 5V ngoài	1	Nếu servo gây reset, nên dùng riêng
+| Thiết bị / Linh kiện                 | Số lượng | Ghi chú                                                  |
+| ------------------------------------ | -------- | -------------------------------------------------------- |
+| ESP32 DevKit V1                      | 1        | Bo mạch chính                                            |
+| Servo 360 độ (SG90 hoặc tương đương) | 1        | Gắn cảm biến có thể quay                                 |
+| Cảm biến siêu âm HC-SR04             | 1        | Đo khoảng cách                                           |
+| Breadboard                           | 1        | Kết nối không cần hàn, dây jumper cái (\~10 dây)         |
+| Buzzer 5V                            | 1        | Cảnh báo phát hiện vật gần                               |
+| LED đỏ                               | 1        | Hiển thị cảnh báo                                        |
+| Điện trở 220Ω                        | 1        | Dùng với LED                                             |
+| Cáp microUSB                         | 1        | Nguồn và lập trình cho ESP32                             |
+| Máy tính xách tay                    | 1        | Sử dụng Arduino IDE                                      |
+| Nguồn 5V ngoài                       | 1        | Nếu thiết lập lại servo gây ra lỗi, nên dùng nguồn riêng |
+
 
 ---
 🔌 Sơ đồ nối dây phần cứng
@@ -44,6 +45,12 @@ Buzzer	(+)	GPIO 27	Cảnh báo khi có vật thể gần
 (–)	GND	
 LED	(+) (qua trở 220Ω)	GPIO 26	Sáng khi phát hiện vật cản
 (–)	GND
+| Thiết bị   | Chân ESP32                           | Ghi chú                                               |
+| ---------- | ------------------------------------ | ----------------------------------------------------- |
+| Servo 360° | GND, VCC 5V, GPIO 13                 | GND nối GND, VCC nối 5V, Signal điều khiển từ GPIO 13 |
+| HC-SR04    | VCC, GND, Trig, Echo                 | Trig: GPIO 5<br>Echo: GPIO 18                         |
+| Buzzer     | (+): GPIO 27, (–): GND               | Cảnh báo khi có vật thể gần                           |
+| LED đỏ     | (+): GPIO 26, (–): GND, qua trở 220Ω | Sáng khi phát hiện vật gần                            |
 
 ## 💻 Phần mềm sử dụng
 - Arduino IDE (có cài thêm board ESP32)
@@ -55,7 +62,7 @@ LED	(+) (qua trở 220Ω)	GPIO 26	Sáng khi phát hiện vật cản
 
 ## 📸 Hình ảnh minh họa
 
-![Sơ đồ nối dây](images/mach-noi-day.jpg)
+![Sơ đồ nối dây](images/mach.jpg)
 
 ---
 
