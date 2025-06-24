@@ -1,10 +1,6 @@
 ✍️ Tác giả
 Tên: NGUYỄN VĂN TÙNG
 
-Trường: Học viện Công nghệ Bưu chính Viễn thông (PTIT)
-
-Năm học: Năm nhất – Ngành Kỹ thuật điện tử viễn thông
-
 # 🚨 Dự án IoT: Radar phát hiện chuyển động bằng ESP32 + HC-SR04 + SERVO 360 + LED + BUZZ
 
 ## 📝 Mô tả dự án
